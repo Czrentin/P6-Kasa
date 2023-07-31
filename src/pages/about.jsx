@@ -1,7 +1,9 @@
+import Slider from "../components/Slider"
+
 function Home() {
   return (
     <div>
-      <h1>Bah super</h1>
+      <Slider />
     </div>
   )
 }

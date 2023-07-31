@@ -1,9 +1,10 @@
 import ListLocations from "../components/LocationList"
+import Slider from "../components/Slider"
 
 function Home() {
   return (
     <div>
-      <h1>Génial de zinzin</h1>
+      <Slider />
       <ListLocations />
     </div>
   )
