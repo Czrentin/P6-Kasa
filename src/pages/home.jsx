@@ -1,10 +1,10 @@
-// import ListLocations from "../components/LocationList"
+import ListLocations from "../components/LocationList"
 
 function Home() {
   return (
     <div>
       <h1>Génial de zinzin</h1>
-      {/* <ListLocations /> */}
+      <ListLocations />
     </div>
   )
 }
