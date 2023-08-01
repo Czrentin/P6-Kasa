@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn run build-css` for running SCSS into CSS
+
+Don't forget it !
+
 ### `yarn start`
 
 Runs the app in the development mode.\
