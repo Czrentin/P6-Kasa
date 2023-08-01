@@ -1,12 +1,12 @@
 import ListLocations from "../components/LocationList"
-import Slider from "../components/Slider"
+import BackgroundImage from "../components/BackgroundImage"
 
 function Home() {
   return (
-    <div>
-      <Slider />
+    <main>
+      <BackgroundImage page="home" />
       <ListLocations />
-    </div>
+    </main>
   )
 }
 

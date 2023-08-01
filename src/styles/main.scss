@@ -1,0 +1,20 @@
+$red-color: #ff6060;
+$black-color: #000;
+$grey-color: #f6f6f6;
+$white-color: #fff;
+$gradient-color: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
+
+@import "./Layouts/Header";
+@import "./Layouts/Footer";
+@import "./Layouts/BackgroundImage";
+@import "./Pages/Error";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

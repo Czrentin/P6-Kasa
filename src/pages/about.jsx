@@ -1,10 +1,10 @@
-import Slider from "../components/Slider"
+import BackgroundImage from "../components/BackgroundImage"
 
 function Home() {
   return (
-    <div>
-      <Slider />
-    </div>
+    <main>
+      <BackgroundImage page="about" />
+    </main>
   )
 }
 
