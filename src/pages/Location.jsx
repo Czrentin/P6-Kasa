@@ -1,4 +1,4 @@
-function FicheLogement() {
+function LocationCard() {
   return (
     <div>
       <figure></figure>
@@ -28,4 +28,4 @@ function FicheLogement() {
   )
 }
 
-export default FicheLogement
+export default LocationCard

@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom"
 import data from "../data/logements.json"
 
-function ListLocations() {
-  const locations = data
-
+function LocationsList() {
   return (
-    <div>
+    <div className="container-logements-cards">
       <ul>
-        {locations.map((location, index) => (
+        {data.map((location, index) => (
           <li key={index}>
             <Link to="/">{location.title}</Link>
           </li>
@@ -17,4 +15,4 @@ function ListLocations() {
   )
 }
 
-export default ListLocations
+export default LocationsList

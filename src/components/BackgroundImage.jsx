@@ -12,8 +12,8 @@ function BackgroundImage({ page }) {
   }
 
   return (
-    <div>
-      <img src={imageSrc} alt={"Paysage"} />
+    <div className="bg-div-img">
+      <img src={imageSrc} alt={"Paysage"} className="bg-img" />
     </div>
   )
 }
