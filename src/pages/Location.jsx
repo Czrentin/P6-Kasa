@@ -30,7 +30,16 @@ function LocationCard() {
         </div>
       </div>
       <Dropdown title="Description" content={location.description} />
-      <Dropdown title="Équipement" content={location.equipments} />
+      <Dropdown
+        title="Équipement"
+        content={
+          <ul>
+            {location.equipments.map((equipments, index) => (
+              <li key={index}>{equipments}</li>
+            ))}
+          </ul>
+        }
+      />
     </div>
   )
 }
