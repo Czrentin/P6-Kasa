@@ -3,11 +3,11 @@ import data from "../data/logements.json"
 
 function LocationsList() {
   return (
-    <div className="container-logements-cards">
+    <div className="container-location-card">
       <ul>
         {data.map((location, index) => (
           <li key={index}>
-            <Link to="/">{location.title}</Link>
+            <Link to={"/logements/" + location.id}>{location.title}</Link>
           </li>
         ))}
       </ul>
