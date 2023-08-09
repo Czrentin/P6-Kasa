@@ -1,6 +1,4 @@
 import React from "react"
-import RedStar from "../assets/star-red.svg"
-import GreyStar from "../assets/star-grey.svg"
 import data from "../data/logements.json"
 import { useParams } from "react-router-dom"
 
@@ -18,11 +16,12 @@ function Rating() {
   return (
     <div className="host-rating">
       {Array.from({ length: maxRating }, (_, index) => (
-        <img
+        <i
           key={index}
-          src={index < filledStars ? RedStar : GreyStar}
-          alt="star"
-        />
+          className={`fa-solid fa-star ${
+            index < filledStars ? "filled" : "empty"
+          }`}
+        ></i>
       ))}
     </div>
   )

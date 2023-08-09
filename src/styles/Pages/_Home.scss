@@ -1,0 +1,42 @@
+@import "../Layouts/Header";
+@import "../Layouts/Footer";
+@import "../Components/BackgroundImage";
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.location-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  list-style: none;
+}
+
+.location-item {
+  list-style: none;
+}
+
+.location-card {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  .location-cover {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .location-title {
+    position: absolute;
+    text-align: left;
+    font-size: 12px;
+    left: 10px;
+    bottom: 10px;
+    color: $white-color;
+  }
+}

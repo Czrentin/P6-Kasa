@@ -8,10 +8,10 @@ $gradient-color: linear-gradient(
   rgba(0, 0, 0, 0.5) 100%
 );
 
-@import "./Layouts/Header";
-@import "./Layouts/Footer";
-@import "./Layouts/BackgroundImage";
 @import "./Pages/Error";
+@import "./Pages/Home";
+@import "./Pages/Location";
+@import "./Pages/About";
 
 * {
   margin: 0;

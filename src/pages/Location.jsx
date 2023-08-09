@@ -1,6 +1,7 @@
 import React from "react"
 import { useParams } from "react-router-dom"
 import data from "../data/logements.json"
+import Slider from "../components/Slider"
 import Dropdown from "../components/Dropdown"
 import Tag from "../components/Tag"
 import Rating from "../components/Rating"
@@ -12,7 +13,7 @@ function LocationCard() {
 
   return (
     <div className="location-card">
-      <img src={location.pictures[0]} alt={location.description} />
+      <Slider />
       <div>
         <div>
           <div>
