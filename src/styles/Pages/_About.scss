@@ -1,4 +1,10 @@
-@import "../Layouts/Header";
-@import "../Layouts/Footer";
 @import "../Components/BackgroundImage";
 @import "../Components/Dropdown";
+
+.dropdown-about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 70%;
+  margin-inline: auto;
+}

@@ -1,11 +1,29 @@
-.bg-div-img {
-  display: flex;
-  justify-content: center;
-}
-
-.bg-img {
-  border-radius: 25px;
+.bg-container {
   width: 90%;
-  max-height: 220px;
-  aspect-ratio: 15/2;
+  max-height: 225px;
+  margin-inline: auto;
+  position: relative;
+
+  .bg-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    p {
+      color: $white-color;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+      font-size: 48px;
+    }
+  }
+  img {
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 15/2;
+    filter: brightness(75%);
+  }
 }

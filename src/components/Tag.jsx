@@ -7,10 +7,12 @@ function Tag() {
   const location = data.find((location) => location.id === id)
 
   return (
-    <div className="location-tag">
-      <ul>
+    <div className="location-tag-container">
+      <ul className="tag-container">
         {location.tags.map((tag, index) => (
-          <li key={index}>{tag}</li>
+          <li key={index} className="tag-item">
+            {tag}
+          </li>
         ))}
       </ul>
     </div>

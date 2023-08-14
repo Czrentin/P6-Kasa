@@ -8,14 +8,20 @@ $gradient-color: linear-gradient(
   rgba(0, 0, 0, 0.5) 100%
 );
 
+@import "./Layouts/Header";
+@import "./Layouts/Footer";
 @import "./Pages/Error";
 @import "./Pages/Home";
-@import "./Pages/Location";
 @import "./Pages/About";
+@import "./Pages/Location";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   object-fit: cover;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }

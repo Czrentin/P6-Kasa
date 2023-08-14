@@ -29,6 +29,9 @@ function Slider() {
           className={slide === index ? "slide" : "slide-hidden"}
         />
       ))}
+      <div className="slide-indicator">
+        {slide + 1}/{location.pictures.length}
+      </div>
       <i
         className="fa-solid fa-chevron-right arrow arrow-right"
         onClick={nextSlide}

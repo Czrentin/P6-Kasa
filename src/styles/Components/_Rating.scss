@@ -1,3 +1,11 @@
+.host-rating {
+  display: flex;
+  gap: 6px;
+  .fa-star {
+    font-size: 18px;
+  }
+}
+
 .filled {
   color: $red-color;
 }

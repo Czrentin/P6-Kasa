@@ -3,9 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  aspect-ratio: 10/5;
-  margin-inline: auto;
+  aspect-ratio: 6/2;
 }
 
 .slide {
@@ -22,7 +20,7 @@
 
 .arrow {
   position: absolute;
-  font-size: 50px;
+  font-size: 80px;
   color: $white-color;
   &:hover {
     cursor: pointer;
@@ -30,8 +28,15 @@
 }
 
 .arrow-left {
-  left: 20px;
+  left: 25px;
 }
 .arrow-right {
-  right: 20px;
+  right: 25px;
+}
+
+.slide-indicator {
+  position: absolute;
+  color: $white-color;
+  bottom: 25px;
+  font-size: 18px;
 }

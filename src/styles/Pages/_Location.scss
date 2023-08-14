@@ -1,6 +1,57 @@
-@import "../Layouts/Header";
-@import "../Layouts/Footer";
 @import "../Components/Slider";
 @import "../Components/Dropdown";
 @import "../Components/Rating";
 @import "../Components/Tag";
+
+.location-container {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.information-container {
+  display: flex;
+  justify-content: space-between;
+  color: $red-color;
+  margin: 30px 0;
+  .location-information-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 60%;
+    h2 {
+      font-size: 36px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.host-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  .host-id {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    img {
+      border-radius: 50%;
+      height: 65px;
+    }
+    p {
+      font-size: 18px;
+      text-align: flex-end;
+      width: 120px;
+    }
+  }
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}

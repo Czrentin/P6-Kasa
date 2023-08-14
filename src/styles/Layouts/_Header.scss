@@ -17,7 +17,10 @@ header {
     gap: 20px;
     a {
       color: $red-color;
-      text-decoration: none;
     }
   }
+}
+
+.active {
+  text-decoration: underline;
 }

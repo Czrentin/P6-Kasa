@@ -4,7 +4,7 @@ import BackgroundImage from "../components/BackgroundImage"
 function Home() {
   return (
     <main>
-      <BackgroundImage page="home" />
+      <BackgroundImage page="home" content="Chez vous, partout et ailleurs" />
       <LocationsList />
     </main>
   )

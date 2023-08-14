@@ -1,7 +1,7 @@
 import ImageHome from "../assets/background-image-1.png"
 import ImageAbout from "../assets/background-image-2.png"
 
-function BackgroundImage({ page }) {
+function BackgroundImage({ page, content }) {
   let imageSrc = null
 
   // Utilisez une condition pour déterminer quelle image afficher en fonction de la page
@@ -12,8 +12,12 @@ function BackgroundImage({ page }) {
   }
 
   return (
-    <div className="bg-div-img">
-      <img src={imageSrc} alt={"Paysage"} className="bg-img" />
+    <div className="bg-container">
+      <div className="bg-content">
+        <p>{content}</p>
+      </div>
+
+      <img src={imageSrc} alt={"Paysage"} />
     </div>
   )
 }

@@ -1,15 +1,17 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import { createRoot } from "react-dom/client"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import "./styles/style.css"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Location from "./pages/Location"
-import Error from "./components/Error"
+import Error from "./pages/Error"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 
-ReactDOM.render(
+const container = document.getElementById("root")
+const root = createRoot(container)
+root.render(
   <React.StrictMode>
     <Router>
       <Header />
@@ -22,5 +24,4 @@ ReactDOM.render(
       <Footer />
     </Router>
   </React.StrictMode>,
-  document.getElementById("root"),
 )

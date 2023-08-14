@@ -1,0 +1,52 @@
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white-color;
+  width: 100%;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: $red-color;
+  padding: 10px 20px 10px 10px;
+  border-radius: 10px;
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .dropdown-button {
+    background: none;
+    border: none;
+    color: $white-color;
+    .fa-chevron-down,
+    .fa-chevron-up {
+      font-size: 20px;
+    }
+  }
+}
+
+/* Ajoutez ces styles à votre fichier CSS */
+.fa-chevron-up,
+.fa-chevron-down {
+  transition: transform 0.5s ease-in-out;
+}
+
+.fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.fa-chevron-up {
+  transform: rotate(-180deg); /* Inversez les degrés de rotation */
+}
+
+.dropdown-content {
+  color: $red-color;
+  background-color: $grey-color;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+}
