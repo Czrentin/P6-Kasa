@@ -9,14 +9,24 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 50px 0;
+  @include mobile-rs {
+    margin: 20px 0;
+  }
   img {
     width: 210px;
+    @include mobile-rs {
+      width: 145px;
+    }
   }
   nav {
     display: flex;
     gap: 20px;
     a {
       color: $red-color;
+      @include mobile-rs {
+        font-size: 12px;
+        text-transform: uppercase;
+      }
     }
   }
 }

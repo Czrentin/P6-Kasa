@@ -5,16 +5,28 @@ footer {
   color: $white-color;
   margin-top: 50px;
   padding-top: 20px;
+  @include mobile-rs {
+    margin-top: 20px;
+    padding: 0;
+  }
   .footer-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 30px;
     gap: 20px;
+    @include mobile-rs {
+      width: 120px;
+      margin: 60px;
+      text-align: center;
+    }
     .footer-logo {
       width: 130px;
       align-self: center;
       fill: $white-color;
+      @include mobile-rs {
+        width: 120px;
+      }
     }
   }
 }

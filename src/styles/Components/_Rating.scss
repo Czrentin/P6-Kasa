@@ -3,6 +3,9 @@
   gap: 6px;
   .fa-star {
     font-size: 18px;
+    @include mobile-rs {
+      font-size: 12px;
+    }
   }
 }
 

@@ -4,6 +4,9 @@ main {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  @include mobile-rs {
+    gap: 20px;
+  }
 }
 
 .location-list {
@@ -15,6 +18,15 @@ main {
   background: #f6f6f6;
   padding: 50px;
   margin: auto;
+  @include tablette-rs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include mobile-rs {
+    grid-template-columns: repeat(1, 1fr);
+    background: none;
+    padding: 0;
+    gap: 20px;
+  }
 }
 
 .location-item {
@@ -33,6 +45,9 @@ main {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 25px;
+    @include mobile-rs {
+      aspect-ratio: 9/7;
+    }
   }
   .location-title {
     position: absolute;

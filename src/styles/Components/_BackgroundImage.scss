@@ -12,12 +12,24 @@
     z-index: 2;
     text-align: center;
     width: 100%;
+    @include mobile-rs {
+      text-align: left;
+    }
     p {
       color: $white-color;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
       font-size: 48px;
+      @include tablette-rs {
+        font-size: 30px;
+      }
+      @include mobile-rs {
+        font-size: 24px;
+        width: 60%;
+        text-align: left;
+        margin-left: 15px;
+      }
     }
   }
   img {
@@ -25,5 +37,9 @@
     width: 100%;
     aspect-ratio: 15/2;
     filter: brightness(75%);
+    @include mobile-rs {
+      border-radius: 10px;
+      aspect-ratio: 3/1;
+    }
   }
 }

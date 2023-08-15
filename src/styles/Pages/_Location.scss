@@ -4,7 +4,7 @@
 @import "../Components/Tag";
 
 .location-container {
-  width: 80%;
+  width: 90%;
   margin-inline: auto;
 }
 
@@ -13,17 +13,32 @@
   justify-content: space-between;
   color: $red-color;
   margin: 30px 0;
+  gap: 10px;
+  @include mobile-rs {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px 0;
+  }
   .location-information-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 60%;
+    max-width: 70%;
+    @include mobile-rs {
+      max-width: 100%;
+    }
     h2 {
       font-size: 36px;
+      @include mobile-rs {
+        font-size: 18px;
+      }
     }
     p {
       font-size: 18px;
       margin-bottom: 20px;
+      @include mobile-rs {
+        margin-bottom: 10px;
+      }
     }
   }
 }
@@ -33,6 +48,13 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 20px;
+  @include mobile-rs {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+  }
   .host-id {
     display: flex;
     align-items: center;
@@ -40,11 +62,18 @@
     img {
       border-radius: 50%;
       height: 65px;
+      @include mobile-rs {
+        height: 32px;
+      }
     }
     p {
       font-size: 18px;
-      text-align: flex-end;
+      text-align: left;
       width: 120px;
+      @include mobile-rs {
+        text-align: right;
+        font-size: 12px;
+      }
     }
   }
 }
@@ -54,4 +83,7 @@
   flex-direction: row;
   width: 100%;
   gap: 20px;
+  @include tablette-rs {
+    flex-direction: column;
+  }
 }
