@@ -1,7 +1,7 @@
 import BackgroundImage from "../components/BackgroundImage"
 import Dropdown from "../components/Dropdown"
 
-function Home() {
+function About() {
   return (
     <main>
       <BackgroundImage page="about" />
@@ -27,4 +27,4 @@ function Home() {
   )
 }
 
-export default Home
+export default About

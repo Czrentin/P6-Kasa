@@ -15,7 +15,7 @@ function Dropdown({ title, content }) {
         </button>
       </div>
       <div className={`dropdown-content ${isOpen ? "open" : ""}`}>
-        {content}
+        <p className={`${isOpen ? "open" : ""}`}>{content}</p>
       </div>
     </div>
   )
