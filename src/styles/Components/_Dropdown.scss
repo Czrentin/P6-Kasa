@@ -38,7 +38,7 @@
   width: 100%;
   height: 0;
   opacity: 0;
-  transition: height 0.3s ease;
+  transition: height 0.5s ease;
   &.open {
     visibility: visible;
     height: auto;
@@ -50,12 +50,18 @@
     font-weight: 400;
     height: 0;
     opacity: 0;
-    transition: height 0.3s ease;
+    transition: height 0.5s ease;
     padding: 20px;
+    ul li {
+      font-weight: 400;
+    }
     &.open {
       visibility: visible;
       height: auto;
       opacity: 1;
+    }
+    @include mobile-rs {
+      font-size: 12px;
     }
   }
   @include mobile-rs {
@@ -65,7 +71,7 @@
 
 .dropdown-item .dropdown-content,
 .dropdown-item .fa-chevron-up {
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 
 .dropdown-item.open .fa-chevron-up {
