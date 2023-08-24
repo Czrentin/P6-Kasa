@@ -6,9 +6,24 @@
   h1 {
     font-size: 260px;
     font-weight: 700;
+    @include tablette-rs {
+      font-size: 220px;
+    }
+    @include mobile-rs {
+      font-size: 180px;
+    }
+    @media all and (max-width: 500px) {
+      font-size: 150px;
+    }
   }
   p {
-    font-size: 36px;
+    font-size: 34px;
+    @include tablette-rs {
+      font-size: 20px;
+    }
+    @media all and (max-width: 500px) {
+      font-size: 13px;
+    }
   }
   .link {
     color: $red-color;
